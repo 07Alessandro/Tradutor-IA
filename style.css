@@ -83,7 +83,33 @@ button:hover {
     transform: scale(1.1);
 }
 
+  span {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
 
+#botaoSom  {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color:#ffffffd6;
+    border-radius: 50%;
+    background-color: #ffffff1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+
+}
+#botaoSom:hover {
+    background-color: #ffffff33;
+    transform: scale(1.1);
+    color: white;
+}
 /* .resultado{
     
     padding: 15px;
