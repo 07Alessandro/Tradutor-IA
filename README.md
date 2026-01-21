@@ -1,21 +1,26 @@
-# 🌐 Tradutor de IA com Reconhecimento de Voz
+# 🌐 AI Multi-Translator: Voz, Texto e Áudio
 
-Um tradutor moderno e responsivo desenvolvido com HTML5, CSS3 e JavaScript. O projeto permite que os usuários traduzam textos digitados ou falados para diversos idiomas em tempo real.
+Um tradutor completo e interativo que utiliza inteligência artificial e APIs modernas para quebrar barreiras linguísticas. O projeto permite tradução via digitação ou comando de voz, com saída de áudio para prática de pronúncia.
 
+## 🚀 Funcionalidades Principais
 
+* **Tradução Inteligente:** Conectado à API MyMemory para traduções precisas em diversos idiomas.
+* **Speech-to-Text (Entrada de Voz):** Use o microfone para ditar o que deseja traduzir (Web Speech API).
+* **Text-to-Speech (Saída de Áudio):** Ouça a tradução com o sotaque nativo clicando no ícone de alto-falante.
+* **Interface Dinâmica:** Feedback visual de "carregando" e design totalmente responsivo.
 
-## 🚀 Funcionalidades
+## 🛠️ Stack Tecnológica
 
-* **Tradução de Texto:** Digite qualquer conteúdo na área de texto para tradução instantânea.
-* **Reconhecimento de Voz:** Ícone de microfone integrado que permite ao usuário ditar o texto que deseja traduzir.
-* **Seleção de Idiomas:** Menu suspenso (select) com múltiplas opções de idiomas de destino.
-* **Interface Responsiva:** Design limpo e adaptável para diferentes tamanhos de tela.
+* **Linguagens:** HTML5, CSS3, JavaScript (ES6+).
+* **API de Tradução:** [MyMemory API](https://mymemory.translated.net/).
+* **Recursos Nativos:** * `webkitSpeechRecognition` (Reconhecimento de fala).
+    * `SpeechSynthesis` (Síntese de voz).
+    * `Fetch API` (Requisições assíncronas).
 
-## 🛠️ Tecnologias Utilizadas
-
-* **HTML5:** Estruturação dos elementos da página.
-* **CSS3:** Estilização, layout e responsividade.
-* **JavaScript (ES6+):** Lógica de tradução, manipulação de eventos e integração com Web Speech API.
-
-
+## 📝 Aprendizados
+Este projeto foi fundamental para consolidar conceitos de:
+1.  Manipulação avançada do DOM.
+2.  Tratamento de respostas assíncronas (`async/await`).
+3.  Uso de APIs de acessibilidade do navegador para entrada e saída de áudio.
+4.  UX Design focado em acessibilidade.
 
