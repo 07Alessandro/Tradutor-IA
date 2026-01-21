@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url("img/mapa.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa-maior {
+    background-color: #000000f2;
+    width: 450px;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.inputTexto {
+    width: 100%;
+    height: 100px;
+    border: none;
+    outline: none;
+    background-color: #ffffff1a;
+    border-radius: 15px;
+    color: white;
+    font-size: 16px;
+    padding: 15px;
+     scrollbar-color: #ffffff1a #000000f2; /* Cor da barra de rolagem */
+    scrollbar-width: thin; /* Largura da barra de rolagem */
+    resize: none;
+    
+}
+
+.controle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+.idiomas {
+    width: 100%; 
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    outline: none;
+    background-color: #ffffff1a;
+    color: white;
+   
+    
+}
+
+option {
+    background-color: #000000f2;
+    color: white;
+    
+}
+
+ option:checked {
+    background-color: #007bff; /* Estilo para a opção selecionada */
+    color: white;
+}
+button {
+   border: none;
+   padding: 10px;
+   background-color: #ffffff1a;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ffffff33;
+    transform: scale(1.1);
+}
+
+
+/* .resultado{
+    
+    padding: 15px;
+    background-color: #ffffff1a;
+    border-radius: 15px;
+     color: white;
+    overflow: hidden; 
+} */
+.resultado {
+    position: relative;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    overflow: hidden;
+    color: white;
+    min-width: 200px;
+    text-align: center;
+}
+
+.carregando {
+   z-index: 5; /* Esconde o texto durante o carregamento */
+}
+
+/* O efeito só aparece quando a classe .carregando estiver presente */
+.resultado.carregando::before {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    background-image: conic-gradient(transparent, #00fffc, transparent 30%);
+    animation: rotate 2s linear infinite;
+    z-index: 1;
+}
+
+/* Camada interna para criar o efeito de borda */
+.resultado.carregando::after {
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background: #1a1a1a;
+    border-radius: 13px;
+    z-index: 2;
+}
+
+.conteudo {
+    position: relative;
+    z-index: 3; /* Sempre acima da animação */
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+.titulo-traducao {
+    color: #ffffff99;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.traducao {
+    color: white;
+    font-size: 18px;
+}
